@@ -24,6 +24,9 @@ for test in range(tests):
         if num < 10:
             ret += ones[str(num)]
             num -= num
+        if(ret[-1] == '-'):
+            ret = ret[0:len(ret) - 1]
+        
         return ret
 
     if intnum == 0:
