@@ -14,8 +14,7 @@ while w < 2:
     rep += res.pop(0)
     w +=1
 del word[0]
-rep = int(rep)
-repeat = 10
+
 i = 0
 final = ""
 for x in word:
