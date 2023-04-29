@@ -10,11 +10,16 @@ for i in total_input:
         res.append(i)
     else:
         word.append(i)
-while w < 2:
-    rep += res.pop(0)
-    w +=1
+check = int(res[0])
+if check < 10:
+    while w < 1:
+        rep += res.pop(0)
+        w +=1
+elif check >= 10:
+    while w < 2:
+        rep += res.pop(0)
+        w +=1
 del word[0]
-
 i = 0
 final = ""
 for x in word:
